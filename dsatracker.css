@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+body.dark {
+    background: #f8fafc;
+    color: #020617;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.toggle-btn {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+/* SECTIONS */
+.section {
+    padding: 40px 10%;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #60a5fa;
+}
+
+/* PROGRESS BARS */
+.progress-box {
+    margin-bottom: 15px;
+}
+
+.bar {
+    height: 10px;
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: linear-gradient(90deg, #38bdf8, #2563eb);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* CARDS */
+.card {
+    padding: 30px;
+    text-align: center;
+    background: #020617;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.completed {
+    border-left: 5px solid #22c55e;
+}
+
+.progress {
+    border-left: 5px solid #facc15;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+}
